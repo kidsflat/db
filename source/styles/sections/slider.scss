@@ -1,0 +1,167 @@
+.slider {
+    min-height: 450px;
+    display: contents;
+    vertical-align: top;
+    color: #fff;
+
+    &__picture {
+     background: url("../images/slider-1.jpg") center/cover no-repeat;
+     max-height: 450px;
+     padding: 45px 0px;
+     padding-bottom: 0;
+
+    }
+
+
+    &__about {
+        text-align: center;
+        margin-bottom: 30px;
+        
+        &-text {
+            font-family: $ff-main-italic;
+            font-size: 2rem;
+            font-style: italic;
+            @media (max-width:650px) {
+                font-size: 1.2rem;
+                
+                 }
+        }
+    }
+    &__info {
+        margin: auto;
+        border-radius: 4px;
+        background: #f9f9f9;
+        text-align: center;
+        width: 666px;
+        padding: 40px 60px 40px 60px;
+        @media (max-width:650px) {
+            width: auto;
+            
+             }
+    }
+    &__title {
+            font-size: 0.625rem;
+            letter-spacing: 3;
+            text-transform: uppercase;
+
+        &-yellow {
+            
+            color: #fab330
+        }
+    }
+    &__description {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-family: $ff-main-italic;
+        letter-spacing: 1;
+        text-align: center;
+        font-size: 1.875rem;
+        color: #282828;
+        font-style: italic;
+        font-weight: 400;
+        @media (max-width:650px) {
+            font-size: 1rem;
+            
+             }
+    }
+    &__counter {
+        text-align: center;
+        padding: 48px 0 30px 0;
+        
+    }
+
+    &__link {
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        box-shadow: 0px 0px 2px 1px rgb(255, 255, 255);
+        width: 12px;
+        height: 12px;
+        color: #fff;
+        margin-left: 10px;
+       
+          &--active {
+            background: #fff;
+        }
+    }
+}
+
+
+     
+          .my-dots {
+            position: absolute;
+            bottom: 25px;
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+          }
+          
+          .my-dots li {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+          }
+          
+          .my-dots li button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+          }
+          
+          .my-dots li button:hover,
+          .my-dots li button:focus {
+            outline: none;
+          }
+          
+          .my-dots li button:hover:before,
+          .my-dots li button:focus:before {
+            opacity: 1;
+          }
+          
+          .my-dots li button:before {
+            font-family: 'slick';
+            font-size: 12px;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: '•';
+            text-align: center;
+            opacity: 1;
+            color: transparent;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: rgb(255, 255, 255);
+            
+            /* Обводка маркеров */
+            
+            /* WebKit (Safari/Chrome) Only */
+            -webkit-text-stroke: 1.2px white;
+            /* If we weren't using text-shadow, we'd set a fallback color
+               and use this to set color instead
+              -webkit-text-fill-color: white; */
+          /* / Обводка маркеров */
+           
+             
+          }
+          
+          .my-dots li.slick-active button:before {
+            opacity: 1;
+            color: white;
+          }

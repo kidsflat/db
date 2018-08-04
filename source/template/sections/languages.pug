@@ -1,0 +1,8 @@
+.navlangs
+  - var itemslang = ['РУС', 'ENG']
+  - var dataItemslang = ['rus', 'eng']
+  each item, key in itemslang
+      if item === 'РУС'
+        a.navlangs__links.navlangs__links--active.navlangs__links--line(href="#" data-link=dataItemslang[key])= item
+      else
+        a.navlangs__links(href="#" data-link=dataItemslang[key])= item

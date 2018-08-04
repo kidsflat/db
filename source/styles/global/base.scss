@@ -1,0 +1,33 @@
+body {
+    font-family: $ff-main;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    @media (max-width:650px) {
+        height: 50%;
+        margin-top:20%
+         }
+ }
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before,*:after {
+    box-sizing: inherit;
+}
+ul,
+li {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
